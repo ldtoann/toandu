@@ -1,0 +1,17 @@
+<main ng-controller="ImagemoreController">
+  <section id="artstyle">
+    <h1 id="sub-heading">IMAGES</h1>
+    <div id="divider"></div>
+    <div id="image-style" class="row">
+      <div
+        id="anh-artstyle-end"
+        class="col-4"
+        ng-repeat="(key, image) in images"
+      >
+        <img src="{{image}}" />
+      </div>
+    </div>
+  </section>
+</main>
+<script src="lib/jquery.min.js"></script>
+<link rel="stylesheet" href="css/imagemore.css" />

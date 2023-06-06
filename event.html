@@ -1,0 +1,71 @@
+<main ng-controller="EventController">
+  <section id="event">
+    <h1 id="sub-heading">EVENTS</h1>
+    <div id="divider"></div>
+    <div id="navbar-example3">
+      <div id="informationlocator">
+        <select ng-model="prop">
+          <option value="">All</option>
+          <option value="title">Title</option>
+          <option value="year">Year</option>
+        </select>
+        <select ng-model="order">
+          <option value="">All</option>
+          <option value="+">A-Z</option>
+          <option value="-">Z-A</option>
+        </select>
+        <form id="search" action="">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="search event"
+            ng-model="search"
+          />
+          <button class="btn"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div id="event-row">
+        <div
+          id="event-item"
+          ng-repeat="event in events | orderBy: order + prop  | filter:{title:search}"
+        >
+          <a ng-click="scrollTo('0')" id="event-img" target="_self">
+            <img src="{{event.image}}" alt="" />
+          </a>
+          <div id="event-info">
+            <h4>{{event.title}}</h4>
+            <a ng-href="http://127.0.0.1:5501/#!/event#{{$index}}"
+              ><i class="fa fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="artstyle">
+    <h1 id="sub-heading">EVENTS CONTENT</h1>
+    <div id="divider"></div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3">
+      <div id="artstyle-row">
+        <div id="artstyle-col">
+          <div
+            class="content"
+            ng-repeat="event in events | orderBy: prop : Boolean(order) | filter:{title:
+            search}"
+          >
+            <h2 id="{{ $index }}">
+              <i class="fa fa-angle-right"></i> {{event.title}}
+            </h2>
+            <div id="info-Influence">
+              <p>{{event.content}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="lib/jquery.min.js"></script>
+<link rel="stylesheet" href="css/event.css" />
+<script src="js/demo.js"></script>
+<link rel="stylesheet" href="lib/bootstrap.min.css" />

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myApp">
+    <div id="foot" ng-controller="myCtrl">
+      <button ng-click="add()">add data</button>
+      <button ng-click="load()">load data</button>
+      <p>{{ biography.name}}</p>
+    </div>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+    <script type="module">
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDZmOZaZtYEkylnnPAkcSjVevPC9zw6xXE",
+        authDomain: "biography-c3b6d.firebaseapp.com",
+        databaseURL: "https://biography-c3b6d-default-rtdb.firebaseio.com",
+        storageBucket: "biography-c3b6d.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDZmOZaZtYEkylnnPAkcSjVevPC9zw6xXE",
+    authDomain: "biography-c3b6d.firebaseapp.com",
+    databaseURL: "https://biography-c3b6d-default-rtdb.firebaseio.com",
+    projectId: "biography-c3b6d",
+    storageBucket: "biography-c3b6d.appspot.com",
+    messagingSenderId: "277782153029",
+    appId: "1:277782153029:web:bb85d313ad4c33f4cde02c",
+    measurementId: "G-MC9C98K3F8",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> -->

@@ -1,0 +1,116 @@
+<main ng-controller="AboutController">
+  <section id="about">
+    <h1 id="sub-heading">ABOUT</h1>
+    <div id="divider"></div>
+    <p>{{about.ABOUTS.TextAbout1}}</p>
+    <div id="about-col">
+      <div id="img-col">
+        <img src="{{about.ABOUTS.ImageAbouts}}" alt="" />
+      </div>
+      <div id="info-col">
+        <h2>{{about.ABOUTS.TitleAbout1}}</h2>
+        <p>{{about.ABOUTS.TextAbout3}}</p>
+        <div id="icon-list-col">
+          <div id="icon-list">
+            <ul>
+              <li>
+                <i class="fa fa-angle-right"></i> <strong> NAME : </strong
+                ><span> {{about.ABOUTS.Name}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> DATE OF BIRTH : </strong
+                ><span> {{about.ABOUTS.DateOfBirth}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> DATE OF DEATH : </strong
+                ><span> {{about.ABOUTS.DateOfDeath}}</span>
+              </li>
+            </ul>
+          </div>
+          <div id="icon-list">
+            <ul>
+              <li>
+                <i class="fa fa-angle-right"></i> <strong>AGE:</strong
+                ><span> {{about.ABOUTS.Age}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> JOB : </strong><span> {{about.ABOUTS.Job}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> BIRTHPLACE : </strong
+                ><span> {{about.ABOUTS.BrithPlace}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="icon-list-themes">
+      <h3>{{about.ABOUTS.TitleAbout2}}</h3>
+      <p>{{about.ABOUTS.TextAbout2}}</p>
+    </div>
+  </section>
+  <section id="artstyle">
+    <h1 id="sub-heading">PROGRESS</h1>
+    <div id="divider"></div>
+    <div id="artstyle-row">
+      <div id="artstyle-col">
+        <h2><i class="fa fa-angle-right"></i> JOB</h2>
+        <div id="info-themesandgenres">
+          <p>{{about.PROGRESS.JOB.Textjob}}</p>
+        </div>
+        <h2>
+          <i class="fa fa-angle-right"></i> MICHAEL JACKSON MONSTROUS HOBBY
+        </h2>
+        <div id="info-themesandgenres">
+          <img
+            src="{{about.PROGRESS.MICHAELJACKSONMONSTROUSHOBBY.Imagemonstroushobby}}"
+            width="100%"
+          />
+          <p>
+            {{about.PROGRESS.MICHAELJACKSONMONSTROUSHOBBY.Textmonstroushobby}}
+          </p>
+        </div>
+      </div>
+      <div id="artstyle-col">
+        <h2><i class="fa fa-angle-right"></i> CHILDHOOD & EARLY LIFE</h2>
+        <div id="info-vocals">
+          <img
+            src="{{about.PROGRESS.CHILDHOODANDEARLYLIFE.Imageearlylife}}"
+            width="100%"
+          />
+          <p>{{about.PROGRESS.CHILDHOODANDEARLYLIFE.Textearlylife }}</p>
+        </div>
+        <h2><i class="fa fa-angle-right"></i> FAMILY LIFE</h2>
+        <div id="info-vocals">
+          <p>{{about.PROGRESS.FAMILYLIFE.Textfamililife}}</p>
+          <img src="{{about.PROGRESS.FAMILYLIFE.Imagefamililife}}" alt="" />
+        </div>
+        <h2><i class="fa fa-angle-right"></i> THE MAIN PROJECTS</h2>
+        <div id="info-musicanddancevideos">
+          <p>{{about.PROGRESS.THEMAINPROJECTS.Textthemainproject}}</p>
+          <img
+            src="{{about.PROGRESS.THEMAINPROJECTS.Imagethemainproject}}"
+            width="100%"
+          />
+        </div>
+        <h2><i class="fa fa-angle-right"></i> HOW MUCH MUSIC AWARDS?</h2>
+        <div id="info-musicanddancevideos">
+          <p>{{about.PROGRESS.HOWMUCHMUSICAWARDS.Texthowmuch}}</p>
+          <img
+            src="{{about.PROGRESS.HOWMUCHMUSICAWARDS.Imagehowmuch}}"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="lib/jquery.min.js"></script>
+<!-- <script src="js/demo.js"></script> -->
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/about.css" />

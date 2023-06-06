@@ -1,0 +1,71 @@
+<main ng-controller="ProductController">
+  <section id="product">
+    <h1 id="sub-heading">PRODUCT MOVIE</h1>
+    <div id="divider"></div>
+    <div id="informationlocator">
+      <select ng-model="prop">
+        <option value="">All</option>
+        <option value="title">Title</option>
+        <option value="year">Year</option>
+      </select>
+      <select ng-model="order">
+        <option value="">All</option>
+        <option value="+">A-Z</option>
+        <option value="-">Z-A</option>
+      </select>
+      <form id="search" action="">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="search"
+          ng-model="search1"
+        />
+        <button class="btn"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <div id="product-row">
+      <div
+        id="product-box"
+        ng-repeat="product in products | orderBy: order + prop | filter:{title:
+          search1} | filter:{type:'movie'}:true"
+      >
+        <movie-product> </movie-product>
+      </div>
+    </div>
+    <h1 id="sub-heading1">PRODUCT MUSIC</h1>
+    <div id="divider"></div>
+    <div id="informationlocator">
+      <select ng-model="prop1">
+        <option value="">All</option>
+        <option value="title">Title</option>
+        <option value="year">Year</option>
+      </select>
+      <select ng-model="order1">
+        <option value="">All</option>
+        <option value="+">A-Z</option>
+        <option value="-">Z-A</option>
+      </select>
+      <form id="search" action="">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="search"
+          ng-model="search"
+        />
+        <button class="btn"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <div id="product-row">
+      <div
+        id="product-box"
+        ng-repeat="product in products | orderBy: order1 + prop1 | filter:{title:
+          search} | filter:{type:'music'}:true"
+      >
+        <music-product> </music-product>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="lib/jquery.min.js"></script>
+<script src="js/demo.js"></script>
+<link rel="stylesheet" href="css/product.css" />

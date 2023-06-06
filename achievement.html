@@ -1,0 +1,29 @@
+<main ng-controller="AchievementController">
+  <section id="about">
+    <h1 id="sub-heading">LIST OF AWARDS!</h1>
+    <div id="divider"></div>
+    <div id="about-col">
+      <div id="info-col">
+        <div id="icon-list-col">
+          <div id="icon-list">
+            <ul>
+              <li ng-repeat="award in awards | filter:{title:search111}">
+                <strong>
+                  <button class="btn">
+                    <input type="checkbox" ng-model="myVarr" />
+                  </button>
+                  &#127942; {{award.title}} : </strong
+                ><span> {{award.year}}</span>
+                <ul ng-show="myVarr">
+                  <p>{{award.content}}</p>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="lib/jquery.min.js"></script>
+<link rel="stylesheet" href="css/achievement.css" />

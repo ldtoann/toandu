@@ -1,0 +1,85 @@
+.sitemap {
+  margin-top: -850px;
+  padding: 318px 0px;
+}
+#image {
+  background-image: url("../image/p087ssxg_DKSD.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 790px;
+  filter: blur(30px);
+}
+.sitemap a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 5px;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+}
+.first > li {
+  list-style: none;
+}
+.first > li > a {
+  background-color: orange;
+  width: 150px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 450px;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.first > li > a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 10px;
+  background: white;
+  top: 100%;
+}
+.first > li > a:hover {
+  background-color: white;
+  transition: 0.5s;
+  color: orange;
+}
+.second {
+  padding-top: 20px;
+  margin-left: 78px;
+}
+.second > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.second a {
+  background: orange;
+  font-size: 14px;
+  width: 125px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  transition: 0.5s;
+}
+.second a:before {
+  content: "";
+  position: absolute;
+  border: 1px solid white;
+  border-left: none;
+  border-bottom: none;
+  height: 9px;
+  top: -10px;
+  left: -76px;
+  width: 139px;
+}
+.second li:first-child a:before {
+  border-top: none;
+}
+
+.second a:hover {
+  background-color: white;
+  color: orange;
+  transition: 0.5s;
+}

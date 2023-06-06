@@ -1,0 +1,53 @@
+#about-col {
+  display: block;
+}
+#icon-list-col {
+  margin-top: 20px;
+  display: block;
+}
+#icon-list ul li {
+  list-style: none;
+  margin: 30px 0;
+  font-size: 20px;
+}
+#icon-list ul li i {
+  color: orange;
+}
+#icon-list ul li strong {
+  color: black;
+  font-weight: 700;
+
+  font-size: 20px;
+}
+#icon-list ul li span {
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+  font-size: 18px;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.btn {
+  background-color: orange;
+  border-radius: 50%;
+}

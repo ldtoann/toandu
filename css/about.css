@@ -1,0 +1,100 @@
+#about-col {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+#img-col {
+  flex-basis: 35%;
+  text-align: center;
+}
+#img-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+#info-col {
+  flex-basis: 70%;
+}
+#info-col h2 {
+  color: orange;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  margin-top: -10px;
+}
+#info-col p {
+  color: rgb(94, 94, 94);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+#icon-list-col {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px;
+}
+#icon-list ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+#icon-list ul li i {
+  color: orange;
+}
+#icon-list ul li strong {
+  color: black;
+  font-weight: 700;
+}
+#icon-list ul li span {
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+  font-size: 15px;
+}
+#icon-list-themes {
+  margin-top: 60px;
+}
+#icon-list-themes h3 {
+  color: orange;
+  font-weight: 900;
+}
+#artstyle-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+}
+#artstyle-col {
+  width: 50%;
+}
+#artstyle-col h2 i {
+  color: orange;
+}
+#info-themesandgenres img,
+#info-Influence img,
+#info-musicanddancevideos img,
+#info-vocals img {
+  border-radius: 10px;
+}
+#info-musicanddancevideos p {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+}
+#info-themesandgenres {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+}
+#info-vocals {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+}
+#icon-list-themes {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+}

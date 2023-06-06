@@ -1,0 +1,520 @@
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  height: 100vh;
+  width: 350px;
+  padding: 15px 30px;
+  background-color: black;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+  z-index: 99;
+}
+#profile {
+  text-align: center;
+  margin: 10px 0;
+}
+#logo {
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid white;
+  object-fit: cover;
+}
+#profile p {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+#social-icon a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 37px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  margin: 2px;
+  transition: 0.5s;
+}
+#social-icon a:hover {
+  background-color: orange;
+  color: black;
+}
+header nav {
+  margin-top: 20px;
+}
+header nav ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin: 5px 0;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+header nav ul li a i {
+  margin-right: 15px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+header nav ul li a:hover i {
+  color: orange;
+}
+header nav ul li a:hover {
+  color: orange;
+}
+header nav ul li .active i {
+  color: orange;
+}
+#footer {
+  text-align: center;
+  background-color: black;
+  width: 350px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+#footer p a {
+  color: orange;
+  text-decoration: none;
+}
+#menumobilebtn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: orange;
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+  z-index: 999;
+  display: none;
+}
+.mobile-nav-active header {
+  left: 0;
+}
+.mobile-nav-active #footer {
+  left: 0;
+}
+/* -------------------------------------- */
+main {
+  margin-left: 350px;
+  background-color: white;
+  transition: 0.5s;
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../image/p087ssxg_DKSD.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+  position: relative;
+}
+#home:before {
+  /* content: ""; */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#home .home-row {
+  z-index: 1;
+  text-align: end;
+}
+#home .home-row h1 {
+  font-size: 75px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  line-height: 70px;
+}
+#home .home-row h1 span {
+  color: orange;
+}
+#home .home-row p {
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: 700;
+}
+#home .home-row p span {
+  border-bottom: 5px solid orange;
+}
+
+#about,
+#achievement,
+#artstyle,
+#event,
+#product {
+  padding: 20px 30px;
+}
+#sub-heading {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#divider {
+  width: 100%;
+  height: 4px;
+  background-color: orange;
+  border-radius: 3px;
+}
+#divider ~ p {
+  color: rgb(94, 94, 94);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+#about-col {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+#img-col {
+  flex-basis: 35%;
+  text-align: center;
+}
+#img-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+#info-col {
+  flex-basis: 70%;
+}
+#info-col h2 {
+  color: orange;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  margin-top: -10px;
+}
+#info-col p {
+  color: rgb(94, 94, 94);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+#icon-list-col {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px;
+}
+#icon-list ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+#icon-list ul li i {
+  color: orange;
+}
+#icon-list ul li strong {
+  color: black;
+  font-weight: 700;
+}
+#icon-list ul li span {
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+  font-size: 18px;
+}
+#achievement-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+#achievement-box {
+  margin-left: 40px;
+  display: inline-flex;
+}
+#achievement-box i {
+  color: orange;
+  font-size: 50px;
+}
+#achievement-box h1 {
+  color: orange;
+  font-size: 50px;
+}
+#achievement-box strong {
+  color: rgb(94, 94, 94);
+  font-size: 30px;
+  margin-left: 5px;
+  font-weight: 500;
+}
+#achievement-box p {
+  color: rgb(94, 94, 94);
+  font-weight: 900;
+  font-size: 18px;
+}
+#artstyle-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+}
+#artstyle-col {
+  width: 50%;
+}
+#artstyle-col h2 i {
+  color: orange;
+}
+#info-Influence p {
+  margin-left: 20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 2px solid orange;
+}
+#info-Influence {
+  border-left: 2px solid orange;
+  position: relative;
+}
+#info-Influence::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -9px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  background-color: white;
+}
+#event-row {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+#event-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+}
+#event-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#event-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: orange;
+  background-color: transparent; */
+  background: rgba(255, 128, 0, 0.75);
+  color: white;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transform: scale(0);
+  transition: 0;
+  border-radius: 10px;
+  visibility: hidden;
+}
+#event-item:hover #event-info {
+  transform: scale(1);
+  visibility: visible;
+  transition: 1s;
+}
+#event-info h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+#event-info h4 + p {
+  font-size: 14px;
+}
+#event-info a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  color: orange;
+  line-height: 46px;
+  transition: 0.4s;
+}
+#event-info a:hover {
+  background-color: black;
+  color: white;
+}
+#product-row {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+#product-box {
+  display: flex;
+  gap: 20px;
+}
+#product-icon i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  font-size: 22px;
+  line-height: 46px;
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  transition: 0.7s;
+  text-align: center;
+}
+#product-box:hover #product-icon i {
+  color: orange;
+  background-color: rgb(255, 255, 255);
+}
+#product-info h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+#product-info h4 + p {
+  color: rgb(94, 94, 94);
+  font-size: 18px;
+  font-weight: 500;
+}
+#backtop {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  cursor: pointer;
+}
+#backtop1 {
+  width: 60px;
+  height: 50px;
+  background: orange;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 0px 20px;
+  font-size: 30px;
+  position: fixed;
+  bottom: 745px;
+  right: 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+#apii {
+  background-color: orange;
+  color: black;
+  font-style: oblique;
+  font-weight: 500;
+}
+.aaa {
+  display: flex;
+}
+#info-themesandgenres {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+}
+#info-vocals {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+}
+#info-musicanddancevideos {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+}
+#info-Influence {
+  font-size: 18px;
+  font-style: normal;
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+}
+/* ------------------------------------------------------------------- */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #000;
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}

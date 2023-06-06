@@ -1,0 +1,269 @@
+<main ng-controller="HomeController">
+  <section id="home">
+    <div class="home-row">
+      <h1>About <br /><span>.</span> Michael Jackson</h1>
+      <p>KING OF POP MUSIC</p>
+    </div>
+  </section>
+  <section id="about">
+    <h1 id="sub-heading">ABOUT</h1>
+    <div id="divider"></div>
+    <p>{{home.about.Textabout1}}</p>
+    <div id="about-col">
+      <div id="img-col">
+        <img src="{{home.about.imgabout}}" alt="" />
+      </div>
+      <div id="info-col">
+        <h2>{{home.about.title}}</h2>
+        <p>{{home.about.Textabout2}}</p>
+        <div id="icon-list-col">
+          <div id="icon-list">
+            <ul>
+              <li>
+                <i class="fa fa-angle-right"></i> <strong> NAME : </strong
+                ><span>{{home.about.Name}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> DATE OF BIRTH : </strong
+                ><span> {{home.about.DateOfBirth}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> DATE OF DEATH : </strong
+                ><span> {{home.about.DateOfDeath}}</span>
+              </li>
+            </ul>
+          </div>
+          <div id="icon-list">
+            <ul>
+              <li>
+                <i class="fa fa-angle-right"></i> <strong>AGE:</strong
+                ><span> {{home.about.Age}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> JOB : </strong><span> {{home.about.Job}}</span>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <strong> BIRTHPLACE : </strong
+                ><span> {{home.about.BirthPlace}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="achievement">
+    <h1 id="sub-heading">AWARDS</h1>
+    <div id="divider"></div>
+    <p>{{home.achievement.Textachievement}}</p>
+    <div id="achievement-row">
+      <div id="achievement-box">
+        <h1>&#127942;</h1>
+        <div class="">
+          <strong>{{home.achievement.Award1.TotalAward1}}</strong>
+          <p>{{home.achievement.Award1.NameAward1}}</p>
+        </div>
+      </div>
+      <div id="achievement-box">
+        <h1>&#127941;</h1>
+        <div class="">
+          <strong>{{home.achievement.Award2.TotalAward2}}</strong>
+          <p>{{home.achievement.Award2.NameAward2}}</p>
+        </div>
+      </div>
+      <div id="achievement-box">
+        <h1>&#128171;</h1>
+        <div class="">
+          <strong>{{home.achievement.Award3.TotalAward3}}</strong>
+          <p>{{home.achievement.Award3.NameAward3}}</p>
+        </div>
+      </div>
+      <div id="achievement-box">
+        <h1>&#11088;</h1>
+        <div class="">
+          <strong>{{home.achievement.AwardMoreTotal.TotalAwardMore}}</strong>
+          <p>{{home.achievement.AwardMoreTotal.NameAwardMore}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="artstyle">
+    <h1 id="sub-heading">ART STYLE</h1>
+    <div id="divider"></div>
+    <p>{{home.artstyle.Textartstyle}}</p>
+    <div id="artstyle-row">
+      <div id="artstyle-col">
+        <h2><i class="fa fa-angle-right"></i> INFLUENCE</h2>
+        <div id="info-Influence">
+          <p>{{home.artstyle.Influence.Textinfluence}}</p>
+          <ul>
+            <li>{{home.artstyle.Influence.Artist1}}</li>
+            <li>{{home.artstyle.Influence.Artist2}}</li>
+            <li>{{home.artstyle.Influence.Artist3}}</li>
+            <li>{{home.artstyle.Influence.Artist4}}</li>
+            <li>{{home.artstyle.Influence.Artist5}}</li>
+            <li>{{home.artstyle.Influence.Artist6}}</li>
+            <li>{{home.artstyle.Influence.Artist7}}</li>
+            <li>{{home.artstyle.Influence.Artist8}}</li>
+            <li>{{home.artstyle.Influence.Artist9}}</li>
+            <li>{{home.artstyle.Influence.Artist10}}</li>
+          </ul>
+        </div>
+        <h2><i class="fa fa-angle-right"></i> THEMES AND GENRES</h2>
+        <div id="info-themesandgenres">
+          <p>{{home.artstyle.ThemeAndGenres.Textthemeandgenres}}</p>
+        </div>
+      </div>
+      <div id="artstyle-col">
+        <h2><i class="fa fa-angle-right"></i> VOCALS</h2>
+        <div id="info-vocals">
+          <p>{{home.artstyle.Vocals.Textvocals}}</p>
+        </div>
+        <h2><i class="fa fa-angle-right"></i> MUSIC AND DANCE VIDEOS</h2>
+        <div id="info-musicanddancevideos">
+          <p>{{home.artstyle.MusicAndDanceVideo.Textmusicanddancevideo}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="event">
+    <h1 id="sub-heading">EVENTS</h1>
+    <div id="divider"></div>
+    <p>{{home.event.Textevent}}</p>
+    <div id="event-row">
+      <div id="event-item">
+        <div id="event-img">
+          <img src="{{home.event.Event1.image}}" alt="" />
+        </div>
+        <div id="event-info">
+          <h4>{{home.event.Event1.title}}</h4>
+          <p>{{home.event.Event1.content}}</p>
+          <a href="#!event"><i class="fa fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="event-item">
+        <div id="event-img">
+          <img src="{{home.event.Event2.image}}" alt="" />
+        </div>
+        <div id="event-info">
+          <h4>{{home.event.Event2.title}}</h4>
+          <p>{{home.event.Event2.content}}</p>
+          <a href="#!event"><i class="fa fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="event-item">
+        <div id="event-img">
+          <img src="{{home.event.Event3.image}}" alt="" />
+        </div>
+        <div id="event-info">
+          <h4>{{home.event.Event3.title}}</h4>
+          <p>{{home.event.Event3.content}}</p>
+          <a href="#!event"><i class="fa fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="event-item">
+        <div id="event-img">
+          <img src="{{home.event.Event4.image}}" alt="" />
+        </div>
+        <div id="event-info">
+          <h4>{{home.event.Event4.title}}</h4>
+          <p>{{home.event.Event4.content}}</p>
+          <a href="#!event"><i class="fa fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="event-item">
+        <div id="event-img">
+          <img src="{{home.event.Event5.image}}" alt="" />
+        </div>
+        <div id="event-info">
+          <h4>{{home.event.Event5.title}}</h4>
+          <p>{{home.event.Event5.content}}</p>
+          <a href="#!event"><i class="fa fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div id="event-item">
+        <div id="event-img">
+          <img src="{{home.event.Event6.image}}" alt="" />
+        </div>
+        <div id="event-info">
+          <h4>{{home.event.Event6.title}}</h4>
+          <p>{{home.event.Event6.content}}</p>
+          <a href="#!event"><i class="fa fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="product">
+    <h1 id="sub-heading">PRODUCTS</h1>
+    <div id="divider"></div>
+    <p>{{home.product.Textproduct }}</p>
+    <div id="product-row">
+      <div id="product-box">
+        <div id="product-icon">
+          <i class="fa-solid fa-compact-disc"></i>
+        </div>
+        <div id="product-info">
+          <h4>{{home.product.Music1.Titelmusic1}}</h4>
+          <p>{{home.product.Music1.Textlmusic1}}</p>
+        </div>
+      </div>
+      <div id="product-box">
+        <div id="product-icon">
+          <i class="fa-solid fa-compact-disc"></i>
+        </div>
+        <div id="product-info">
+          <h4>{{home.product.Music2.Titelmusic2}}</h4>
+          <p>{{home.product.Music2.Textlmusic2}}</p>
+        </div>
+      </div>
+      <div id="product-box">
+        <div id="product-icon">
+          <i class="fa-solid fa-compact-disc"></i>
+        </div>
+        <div id="product-info">
+          <h4>{{home.product.Music3.Titelmusic3}}</h4>
+          <p>{{home.product.Music3.Textlmusic3}}</p>
+        </div>
+      </div>
+    </div>
+    <div id="product-row">
+      <div id="product-box">
+        <div id="product-icon">
+          <i class="fa fa-video"></i>
+        </div>
+        <div id="product-info">
+          <h4>{{home.product.Movie1.Titelmovie1}}</h4>
+          <p>{{home.product.Movie1.Textlmovie1}}</p>
+        </div>
+      </div>
+      <div id="product-box">
+        <div id="product-icon">
+          <i class="fa fa-video"></i>
+        </div>
+        <div id="product-info">
+          <h4>{{home.product.Movie2.Titelmovie2}}</h4>
+          <p>{{home.product.Movie2.Textlmovie2}}</p>
+        </div>
+      </div>
+      <div id="product-box">
+        <div id="product-icon">
+          <i class="fa fa-video"></i>
+        </div>
+        <div id="product-info">
+          <h4>{{home.product.Movie3.Titelmovie3}}</h4>
+          <p>{{home.product.Movie3.Textlmovie3}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="lib/jquery.min.js"></script>
+<script src="js/demo.js"></script>
+<script src="test.js"></script>
+<link rel="stylesheet" href="css/home.css" />
+<!-- <link rel="stylesheet" href="test.css" /> -->
+class="about" data-scroll="0"
